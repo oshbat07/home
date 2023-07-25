@@ -5,7 +5,7 @@ const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
     publicPath:
-      argv.mode === "development"
+      argv.mode === "production"
         ? "http://localhost:3000/"
         : "https://home-zzrq-oshinbatra07-gmailcom.vercel.app/",
   },
